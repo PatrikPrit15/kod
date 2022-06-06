@@ -1,0 +1,139 @@
+chyba 
+5 100
+15 42 2 99 1
+
+decimal[] uhol = new decimal[n];
+            for (int i = 0; i < n; i++)
+            {
+                uhol[i] = Convert.ToDecimal(Convert.ToDecimal(k[i]) / Convert.ToDecimal(s) * 360);
+            }
+            decimal uholakt = 0;
+            int hodakt = 0;
+            if (uhol[0] > uhol[1])
+            {
+                if (uhol[0] - uhol[1] > 180)
+                {
+                    uholakt = Convert.ToDecimal(uhol[1] - ((360 - (uhol[0] - uhol[1])) / 2));
+                    hodakt = 2;
+                }
+                if (uhol[0] - uhol[1] < 180)
+                {
+                    uholakt = Convert.ToDecimal(uhol[1] + ((uhol[0] - uhol[1]) / 2));
+                    hodakt = 2;
+                }
+            }
+            if (uhol[1] > uhol[0])
+            {
+                
+                if (uhol[1] - uhol[0] > 180)
+                {
+                    uholakt = Convert.ToDecimal(uhol[0] - ((360 - (uhol[1] - uhol[0])) / 2));
+                    hodakt = 2;
+                }
+                if (uhol[1] - uhol[0] < 180)
+                {
+                    uholakt = Convert.ToDecimal(uhol[0] + ((uhol[1] - uhol[0]) / 2));
+                    hodakt = 2;
+                }
+            }
+            if (uhol[1] == uhol[0])
+            {
+                uholakt = uhol[0];
+                hodakt = 2;
+            }
+            for (int i = 2; i < n; i++)
+            {
+                if (uholakt > uhol[i])
+                {
+                    if (uholakt-uhol[i] < 180)
+                    {
+                        uholakt -= ((uholakt - uhol[i]) / (hodakt + 1));
+                        if (uholakt < 0)
+                        {
+                            uholakt += 360;
+                        }
+                    }
+                    if (uholakt-uhol[i] > 180)
+                    {
+                        uholakt += ((360 - (uholakt- uhol[i])) / (hodakt + 1));
+                        if (uholakt >= 360)
+                        {
+                            uholakt -= 360;
+                        }
+                    }
+                    if (uholakt - uhol[i] == 180)
+                    {
+                        hodakt-=2;
+                    }
+
+                }
+                if (uholakt < uhol[i])
+                {
+
+                    if (uhol[i] - uholakt < 180)
+                    {
+                        uholakt += ((uhol[i] - uholakt) / (hodakt + 1));
+                        if (uholakt >= 360)
+                        {
+                            uholakt -= 360;
+                        }
+
+                    }
+                    if (uhol[i] - uholakt > 180)
+                    {
+                        uholakt -= ((360-(uhol[i] - uholakt)) / (hodakt + 1));
+                        if (uholakt<0)
+                        {
+                            uholakt += 360;
+                        }
+                    }
+                    if (uhol[i] - uholakt == 180)
+                    {
+                        hodakt-=2;
+                    }
+                }
+                hodakt ++;
+            }
+            Console.WriteLine(uholakt);
+            decimal rychlo = uholakt / (360 / s);
+            int rychodpoveddown =Convert.ToInt32( Math.Floor(rychlo));
+            int rychodpovedup = Convert.ToInt32(Math.Ceiling(rychlo));
+            Console.WriteLine(rychodpoveddown + " " + rychodpovedup);
+            long vysledokrychlo = 1000000000000000000;
+            for (int i = 5; i <= 13; i++)
+            {
+                for (int i2 = 0; i2 < n; i2++)
+                {
+                    if (k[i2] > i)
+                    {
+                        if (k[i2] - i > s / 2)
+                        {
+                            dvysledok += s - (k[i2] - i);
+                        }
+                        else
+                        {
+                            dvysledok += k[i2] - i;
+                        }
+                    }
+                    else
+                    {
+                        if (i - k[i2] > s / 2)
+                        {
+                            dvysledok += s - (i - k[i2]);
+                        }
+                        else
+                        {
+                            dvysledok += i - k[i2];
+                        }
+                    }
+                    if (dvysledok >= vysledokrychlo)
+                    {
+                        break;
+                    }
+                }
+                if (dvysledok < vysledokrychlo)
+                {
+                    vysledokrychlo = dvysledok;
+                }
+                dvysledok = 0;
+}

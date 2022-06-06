@@ -1,0 +1,24 @@
+import sys
+vys = 0
+vysledok = 999999999999999999999999999999
+pocetpolicn, dlzkapolices =[int (x) for x in input ().split ()]
+knihapos =[int (x) for x in input ().split ()]
+for i in range (dlzkapolices):
+    for i2 in range (pocetpolicn):
+        if knihapos[i2]>i:
+            if knihapos[i2] - i > dlzkapolices / 2:
+                vys = vys + dlzkapolices - (knihapos[i2] - i)
+            else:
+                vys = vys + knihapos[i2] - i
+        if knihapos[i2]<i:
+            if i - knihapos[i2] > dlzkapolices / 2:
+                vys = vys + dlzkapolices - (i - knihapos[i2])
+            else:
+                vys = vys + i - knihapos[i2]
+        if vys>=vysledok:
+            break
+        
+    if (vys < vysledok):
+        vysledok = vys 
+    vys = 0
+print (vysledok)

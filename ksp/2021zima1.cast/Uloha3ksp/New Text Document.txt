@@ -1,0 +1,55 @@
+                        vys += 1;
+                        if (zvysok != 0)
+                        {
+                            if (zvysok + c[i] - d[aktualne_d] > 0)
+                            {
+                                prechod = zvysok + c[i] - d[aktualne_d];
+                                zvysok = prechod;
+                                prechod = 0;
+                                x = 1;
+                                zvysok = c[i] - d[aktualne_d];
+
+
+                            }
+                            if (zvysok + c[i] - d[aktualne_d] < 0)
+                            {
+                                prechod = zvysok + c[i] - d[aktualne_d];
+                                zvysok = prechod;
+                                prechod = 1;
+                                x = 1;
+                                d[aktualne_d] += zvysok;
+                                zvysok = 0;
+                            }
+                            if (zvysok+c[i] - d[aktualne_d] == 0 && x == 0)
+                            {
+                                prechod = 1;
+                                zvysok = 0;
+                                x = 0;
+                                aktualne_d++;
+                            }
+                        }
+                        else
+                        {
+                            if (c[i] - d[aktualne_d] > 0)
+                            {
+                                zvysok = c[i] - d[aktualne_d];
+                                prechod = 0;
+                                x = 1;
+                                aktualne_d++;
+                                
+                            }
+                            if (c[i] - d[aktualne_d] < 0)
+                            {
+                                zvysok = c[i] - d[aktualne_d];
+                                prechod = 1;
+                                x = 1;
+                                d[aktualne_d] += zvysok;
+                                zvysok = 0;
+                            }
+                            if (c[i] - d[aktualne_d] == 0 && x == 0)
+                            {
+                                prechod = 1;
+                                x = 0;
+                                aktualne_d++;
+                            }
+                        }

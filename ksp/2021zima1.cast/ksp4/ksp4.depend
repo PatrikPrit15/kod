@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1634663871 source:c:\users\pritr\dropbox\pc\desktop\ksp4\main.cpp
+	<iostream>
+	<queue>
+	<algorithm>
+	<array>
+

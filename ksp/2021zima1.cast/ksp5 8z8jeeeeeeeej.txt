@@ -1,0 +1,56 @@
+import sys
+
+z = list(map(int, input().split()))
+c = int(input())
+vys = 0
+imen = i = 0
+while 1:
+    if imen < 10:
+        vys = vys + z[imen]
+        if vys == c:
+            print(i)
+            sys.exit()
+        if i > 9999:
+            break
+
+        i = i + 1
+        imen = i
+        vys = 0
+    else:
+        nas = 1
+        while imen != 0:
+            cis = imen % 10
+            nas = nas * cis
+            imen = imen // 10
+        imen = nas
+        vys = vys + 1
+pole = list(0 for x in range(0, 5))
+prve_c = [2, 3, 4, 6, 7, 8, 9]
+vys = 0
+vysledok = 99999999999999999999999999999999
+imen = i = 0
+while 1:
+    if imen < 10:
+        vys = vys + z[imen]
+        if vys == c and i < vysledok:
+            vysledok = i
+        for i2 in range(5):
+            if pole[i2] + 1 > 7:
+                pole[i2] = 0
+            else:
+                pole[i2] = pole[i2] + 1
+                if pole[4] > 6:
+                    print(vysledok)
+                    sys.exit()
+                break
+        string = str(prve_c[pole[4]]) + pole[3] * "6" + pole[2] * "7" + pole[1] * "8" + pole[0] * "9"
+        imen = i = int(string)
+        vys = 0
+    else:
+        nas = 1
+        while imen != 0:
+            cis = imen % 10
+            nas = nas * cis
+            imen = imen // 10
+        imen = nas
+        vys = vys + 1

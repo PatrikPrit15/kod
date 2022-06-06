@@ -1,0 +1,1 @@
+V tomto priečinku sú úlohu z programátorského semináru ksp.sk zo zimnej časti 2021/22.

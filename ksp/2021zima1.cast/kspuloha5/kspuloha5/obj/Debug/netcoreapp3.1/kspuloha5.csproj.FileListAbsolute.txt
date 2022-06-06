@@ -1,0 +1,14 @@
+C:\Users\pritr\Dropbox\PC\Desktop\KSP\kspuloha5\kspuloha5\bin\Debug\netcoreapp3.1\kspuloha5.exe
+C:\Users\pritr\Dropbox\PC\Desktop\KSP\kspuloha5\kspuloha5\bin\Debug\netcoreapp3.1\kspuloha5.deps.json
+C:\Users\pritr\Dropbox\PC\Desktop\KSP\kspuloha5\kspuloha5\bin\Debug\netcoreapp3.1\kspuloha5.runtimeconfig.json
+C:\Users\pritr\Dropbox\PC\Desktop\KSP\kspuloha5\kspuloha5\bin\Debug\netcoreapp3.1\kspuloha5.runtimeconfig.dev.json
+C:\Users\pritr\Dropbox\PC\Desktop\KSP\kspuloha5\kspuloha5\bin\Debug\netcoreapp3.1\kspuloha5.dll
+C:\Users\pritr\Dropbox\PC\Desktop\KSP\kspuloha5\kspuloha5\bin\Debug\netcoreapp3.1\kspuloha5.pdb
+C:\Users\pritr\Dropbox\PC\Desktop\KSP\kspuloha5\kspuloha5\obj\Debug\netcoreapp3.1\kspuloha5.csproj.AssemblyReference.cache
+C:\Users\pritr\Dropbox\PC\Desktop\KSP\kspuloha5\kspuloha5\obj\Debug\netcoreapp3.1\kspuloha5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pritr\Dropbox\PC\Desktop\KSP\kspuloha5\kspuloha5\obj\Debug\netcoreapp3.1\kspuloha5.AssemblyInfoInputs.cache
+C:\Users\pritr\Dropbox\PC\Desktop\KSP\kspuloha5\kspuloha5\obj\Debug\netcoreapp3.1\kspuloha5.AssemblyInfo.cs
+C:\Users\pritr\Dropbox\PC\Desktop\KSP\kspuloha5\kspuloha5\obj\Debug\netcoreapp3.1\kspuloha5.csproj.CoreCompileInputs.cache
+C:\Users\pritr\Dropbox\PC\Desktop\KSP\kspuloha5\kspuloha5\obj\Debug\netcoreapp3.1\kspuloha5.dll
+C:\Users\pritr\Dropbox\PC\Desktop\KSP\kspuloha5\kspuloha5\obj\Debug\netcoreapp3.1\kspuloha5.pdb
+C:\Users\pritr\Dropbox\PC\Desktop\KSP\kspuloha5\kspuloha5\obj\Debug\netcoreapp3.1\kspuloha5.genruntimeconfig.cache

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1634658290 source:c:\users\pritr\dropbox\pc\desktop\uloha4ksp\54\main.cpp
+	<iostream>
+	<queue>
+	<algorithm>
+	<array>
+

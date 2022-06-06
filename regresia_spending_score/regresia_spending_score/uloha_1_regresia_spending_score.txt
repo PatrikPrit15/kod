@@ -1,0 +1,33 @@
+Cvičenie 1
+Vytvor jupyter notebook v ktorom spracuješ príklad lineárnej regresie. K dispozícií máš nové dáta s ktorými sme ešte nepracovali.
+
+Principiálne pôjde presne o to isté, ako sme robili v tejto kapitole. Chcem grafy, chcem analýzu a vizualizáciu dát pred spracovaním, normalizáciu, gradient descent. Graf toho ako sa znižovala chyba počas trénovania. Chcem opis toho prečo si myslíš, že tie parametre, ktoré si zvolil sú správne. Chcem aby si vytvoril reálny report, ktorý by si mohol odovzdať svojmu šéfovi ako výsledok svojho úsilia a práce.
+
+Ak si s niečim nevieš dať rady, napíš na diskusiu a určite si s tým poradíme.
+
+Kritéria riešenia
+Výstupom teda bude jupyter notebook, ktorý bude mať nasledovné časti:
+
+načítanie dát z formátu csv
+normalizácia
+vizualizácia dát v 2D grafe
+algoritmus gradient descent
+natrénovanie modelu
+chybová funkcia
+vizualizácia modelu v grafe spolu s dátami
+vizualizácia priebehu chybovej funkcie (použitie subplots -> chcem to v jednom grafe)
+finálna funkcia, ktorá bude predpovedať hodnoty
+vstup NEBUDE normalizovaný, takže budeš musieť normalizovať hodnoty
+aby vstup aj výstup boli formulované ľudskou rečou
+aby tvoj program vedel používať aj NE-programátor
+tvoje záverečné poznámky
+aký learning rate si zvolil
+koľko epoch si trénoval
+aká je priemerná chyba modelu
+prečo si myslíš, že tvoje riešenie je dobré
+Používaj iba knižnice, ktoré sme použili v kurze. Musím vedieť jupyter notebook spustiť u seba!
+
+Dáta
+Pracovať budeš s datasetom o mužských zákazníkoch obchodného centra. Na základe ročného príjmu a veku je priradený tzv. Spending Score. V preklade utrácania schopnosť (ako veľa daný človek nakupuje).
+
+Tvojou úlohou je spraviť model, ktorý na základe veku a ročného príjmu bude predpovedať "Spending score". Spending score sa pohybuje v intervale 0-100.
