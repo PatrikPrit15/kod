@@ -1,3 +1,2 @@
-# kod
-moj kod
+#moj kod
 
